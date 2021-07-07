@@ -1,4 +1,4 @@
-version: "3"
+version: "3.6"
 services:
 
   init-guacamole-db:
@@ -55,15 +55,14 @@ services:
     restart: unless-stopped
     networks:
       - net
-    volumes:  
-      - ./YaraShare:/YaraShare
-
+    volumes:
+      - ~/YaraShare:/YaraShare
+      
 volumes:
   dbinit:
     driver: local
   dbdata:
     driver: local
-
 
 networks: 
   net:

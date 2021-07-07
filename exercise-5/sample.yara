@@ -1,8 +1,8 @@
-rule Sample_Exercise5 {
+rule intriguing_France_strings {
     meta:
         author = "Derek Thomas & Paul Hutelmyer"
-        description = "Matches all words in test file"
-        date = "06/22/2021"
+        description = "Matches on suspicious string intriguing_France sample"
+        date = "07/15/2021"
         version = "1.0"
         license = "N/A"
         family="N/A"
@@ -11,10 +11,8 @@ rule Sample_Exercise5 {
         scope ="['testing', 'hunting']"
         intel ="['N/A']"
     strings:
-        $string1 = "hello"
-        $string2 = "exercise"
-        $string3 = "five"
+        $string1 = "margaritasexy
 	
     condition:
-        all of them 
+        $string1
 }
